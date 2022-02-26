@@ -4,17 +4,17 @@ export const ROUNDS: IRound[] = [
 	{
 		round: 1,
 		bigBlind: 200,
-		duration: 1
+		duration: 15
 	},
 	{
 		round: 2,
 		bigBlind: 400,
-		duration: 1
+		duration: 15
 	},
 	{
 		round: 3,
 		bigBlind: 600,
-		duration: 1
+		duration: 15
 	},
 	{
 		round: 4,
@@ -25,27 +25,27 @@ export const ROUNDS: IRound[] = [
 	{
 		round: 5,
 		bigBlind: 1000,
-		duration: 12
+		duration: 15
 	},
 	{
 		round: 6,
 		bigBlind: 1200,
-		duration: 12
+		duration: 15
 	},
 	{
 		round: 7,
 		bigBlind: 1400,
-		duration: 12
+		duration: 15
 	},
 	{
 		round: 8,
 		bigBlind: 1600,
-		duration: 12
+		duration: 15
 	},
 	{
 		round: 9,
 		bigBlind: 1600,
-		duration: 12
+		duration: 15
 	},
 	// 2 óra
 	{
