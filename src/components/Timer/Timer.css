@@ -1,0 +1,53 @@
+.timer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: calc(100vh - 120px);
+	gap: 40px;
+}
+.time {
+	text-align: center;
+	/* margin-top: 200px; */
+	font-size: 160px;
+}
+.blinds {
+	text-align: center;
+	font-size: 50px;
+}
+
+.warning {
+	animation-name: animation-warning;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+}
+
+@keyframes animation-warning {
+	50% {
+		background-color: rgb(197, 22, 22);
+	}
+}
+
+.buttonContainer {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.startButton {
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding: 16px 28px;
+	border-radius: 8px;
+	font-size: 20px;
+	box-shadow: 0.4px 0.6px 0.8px rgba(0, 0, 0, 0.022), 1px 1.3px 1.9px rgba(0, 0, 0, 0.032), 1.9px 2.5px 3.6px rgba(0, 0, 0, 0.04),
+		3.4px 4.5px 6.5px rgba(0, 0, 0, 0.048), 6.3px 8.4px 12.1px rgba(0, 0, 0, 0.058), 15px 20px 29px rgba(0, 0, 0, 0.08);
+}
+.startButton:hover {
+	box-shadow: 0.3px 0.4px 0.5px rgba(0, 0, 0, 0.011), 0.8px 1px 1.3px rgba(0, 0, 0, 0.016), 1.5px 1.9px 2.4px rgba(0, 0, 0, 0.02),
+		2.7px 3.4px 4.2px rgba(0, 0, 0, 0.024), 5px 6.3px 7.9px rgba(0, 0, 0, 0.029), 12px 15px 19px rgba(0, 0, 0, 0.04);
+}
