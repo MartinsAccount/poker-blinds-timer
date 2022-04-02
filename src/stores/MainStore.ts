@@ -33,6 +33,10 @@ export class MainStore {
 		this.timerStopped = true;
 	}
 
+	@action setActiveRound(round: IRound) {
+		this.activeRound = round;
+	}
+
 	@action changeTime() {
 		const currentTime = { ...this.time };
 

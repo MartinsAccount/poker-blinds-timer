@@ -18,7 +18,11 @@ export class Rounds extends React.Component<IRoundsProps> {
 			<div className="roundsTable">
 				{ROUNDS.map((round: IRound) => {
 					return (
-						<div key={round.round} className={`round ${MainStore.activeRound?.round < round.round ? 'afterRounds' : ''}`}>
+						<div
+							onClick={() => MainStore.setActiveRound(round)}
+							key={round.round}
+							className={`round ${MainStore.activeRound?.round < round.round ? 'afterRounds' : ''}`}
+						>
 							<div>{round.round}.</div>
 							<div>{round.bigBlind}</div>
 							<div>{round.duration}p</div>
