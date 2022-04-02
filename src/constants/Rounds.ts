@@ -107,12 +107,12 @@ export const ROUNDS: IRound[] = [
 	{
 		round: 21,
 		bigBlind: 7000,
-		duration: 10
+		duration: 8
 	},
 	{
 		round: 22,
 		bigBlind: 8000,
-		duration: 10
+		duration: 8
 	},
 	{
 		round: 23,
