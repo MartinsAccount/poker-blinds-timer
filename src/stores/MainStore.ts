@@ -14,7 +14,7 @@ export class MainStore {
 
 	@observable time = {
 		hours: 0,
-		minutes: 15,
+		minutes: 10,
 		seconds: 0
 	};
 
