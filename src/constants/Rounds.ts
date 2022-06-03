@@ -59,7 +59,7 @@ export const ROUNDS: IRound[] = [
 	},
 	{
 		round: 12,
-		bigBlind: 2700,
+		bigBlind: 2800,
 		duration: 10
 	},
 	// 2 óra
@@ -75,17 +75,17 @@ export const ROUNDS: IRound[] = [
 	},
 	{
 		round: 15,
-		bigBlind: 4000,
+		bigBlind: 3800,
 		duration: 10
 	},
 	{
 		round: 16,
-		bigBlind: 4400,
+		bigBlind: 4000,
 		duration: 10
 	},
 	{
 		round: 17,
-		bigBlind: 4700,
+		bigBlind: 4400,
 		duration: 10
 	},
 	{
@@ -101,32 +101,67 @@ export const ROUNDS: IRound[] = [
 	},
 	{
 		round: 20,
-		bigBlind: 6000,
+		bigBlind: 5800,
 		duration: 10
 	},
 	{
 		round: 21,
-		bigBlind: 7000,
+		bigBlind: 6400,
 		duration: 8
 	},
 	{
 		round: 22,
-		bigBlind: 8000,
+		bigBlind: 7000,
 		duration: 8
 	},
 	{
 		round: 23,
-		bigBlind: 9000,
+		bigBlind: 7800,
 		duration: 8
 	},
 	{
 		round: 24,
-		bigBlind: 10000,
+		bigBlind: 8400,
 		duration: 8
 	},
 	{
 		round: 25,
+		bigBlind: 9000,
+		duration: 8
+	},
+	{
+		round: 26,
+		bigBlind: 10000,
+		duration: 8
+	},
+	{
+		round: 27,
+		bigBlind: 11000,
+		duration: 8
+	},
+	{
+		round: 28,
 		bigBlind: 12000,
+		duration: 8
+	},
+	{
+		round: 29,
+		bigBlind: 13000,
+		duration: 8
+	},
+	{
+		round: 30,
+		bigBlind: 15000,
+		duration: 8
+	},
+	{
+		round: 31,
+		bigBlind: 17000,
+		duration: 8
+	},
+	{
+		round: 32,
+		bigBlind: 20000,
 		duration: 8
 	}
 	// 4 óra
