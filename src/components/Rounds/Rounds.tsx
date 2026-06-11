@@ -3,6 +3,8 @@ import React from 'react';
 import './Rounds.css';
 import { ROUNDS } from '../../constants/Rounds';
 import { IRound, MainStore } from '../../stores/MainStore';
+import { NTab } from '../../shared/neumorphic/NTab/NTab';
+import { NTabsContainer } from '../../shared/neumorphic/NTabsContainer/NTabsContainer';
 
 interface IRoundsProps {
 	MainStore?: MainStore;
@@ -15,21 +17,28 @@ export class Rounds extends React.Component<IRoundsProps> {
 		const { MainStore } = this.props;
 
 		return (
-			<div className="roundsTable">
+			// <div className="roundsTable">
+			<NTabsContainer>
 				{ROUNDS.map((round: IRound) => {
 					return (
-						<div
+						<NTab
 							onClick={() => MainStore.setActiveRound(round)}
 							key={round.round}
-							className={`round ${MainStore.activeRound?.round < round.round ? 'afterRounds' : ''}`}
+							isActive={MainStore.activeRound?.round === round.round}
+							style={round.round < MainStore.activeRound?.round && { color: '#c8d0e7' }}
 						>
-							<div>{round.round}.</div>
-							<div>{round.bigBlind}</div>
-							<div>{round.duration}p</div>
-						</div>
+							<div className="tabContent">
+								<div style={{ fontSize: '1rem' }}>{round.round}.</div>
+								<div>{round.bigBlind}</div>
+								{/* <div style={{ fontSize: '1.2rem' }}>{round.bigBlind}</div> */}
+								<div style={{ fontSize: '1rem' }}>{round.duration}p</div>
+							</div>
+						</NTab>
 					);
 				})}
-			</div>
+			</NTabsContainer>
+
+			// </div>
 		);
 	}
 }

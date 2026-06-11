@@ -11,10 +11,10 @@ class App extends React.Component {
 	render() {
 		return (
 			<Provider {...this.stores}>
-				<React.Fragment>
+				<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 20 }}>
 					<Rounds />
 					<Timer />
-				</React.Fragment>
+				</div>
 			</Provider>
 		);
 	}

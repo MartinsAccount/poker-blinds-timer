@@ -1,20 +1,45 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* width: 100%; */
+	/* height: calc(100vh - 120px); */
+	gap: 40px;
+	background-color: #e4ebf5;
+	margin-top: 40px;
+	/* background-color: #c9184a; */
+	/* background: linear-gradient(90deg, #ffff00 6%, #ffa500 25%, #f14444 45%, #d53567 55%, #9a109a 94%); */
+}
 .timer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
-	height: calc(100vh - 120px);
 	gap: 40px;
+	padding: 80px 60px;
+
+	/* From https://css.glass */
+	/* background: rgba(255, 255, 255, 0.31); */
+	border-radius: 16px;
+	/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+	background-color: #e4ebf5;
+	box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem white;
+
+	backdrop-filter: blur(3.7px);
+	-webkit-backdrop-filter: blur(5px);
 }
+
 .time {
 	text-align: center;
 	/* margin-top: 200px; */
 	font-size: 160px;
+	/* color: white; */
 }
 .blinds {
 	text-align: center;
 	font-size: 50px;
+	/* color: white; */
 }
 
 .warning {

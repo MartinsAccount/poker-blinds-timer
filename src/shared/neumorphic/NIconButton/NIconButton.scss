@@ -1,0 +1,26 @@
+@import '../variables.scss';
+
+.iconButton {
+	// width: 80px;
+	// height: 80px;
+	border-radius: 50%;
+	box-shadow: $shadow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	cursor: pointer;
+	color: $greyDark;
+	transition: all 1s ease;
+	padding: 12px;
+
+	&-active {
+		box-shadow: $inner-shadow;
+		color: $primary;
+	}
+
+	&:hover {
+		box-shadow: $inner-shadow;
+		color: $primary;
+	}
+}

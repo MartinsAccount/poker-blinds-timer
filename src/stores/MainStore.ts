@@ -7,10 +7,14 @@ export interface IRound {
 	duration: number;
 }
 
+type IView = 'stopwatch' | 'time' | 'settings';
+
 export class MainStore {
 	@observable timer: NodeJS.Timer;
 	@observable timerStopped: boolean;
 	@observable showWarning: boolean = false;
+	@observable activeView: IView = 'stopwatch';
+	@observable newRounds: IRound[] = null;
 
 	@observable time = {
 		hours: 0,
@@ -19,6 +23,10 @@ export class MainStore {
 	};
 
 	@observable activeRound: IRound;
+
+	constructor() {
+		this.newRounds = ROUNDS;
+	}
 
 	@action startTimer() {
 		if (!this.activeRound) {
@@ -35,6 +43,16 @@ export class MainStore {
 
 	@action setActiveRound(round: IRound) {
 		this.activeRound = round;
+	}
+
+	@action setView(view: IView) {
+		this.activeView = view;
+	}
+	@action editRound(round: IRound, newBigBlind: string) {
+		const roundNumber = round.round;
+		const roundIndex = this.newRounds.findIndex((r) => r.round === roundNumber);
+
+		this.newRounds[roundIndex].bigBlind = +newBigBlind;
 	}
 
 	@action changeTime() {
@@ -77,4 +95,8 @@ export class MainStore {
 			this.changeTime();
 		}, 1000);
 	});
+
+	getFieldValue = (round: IRound) => {
+		return this.newRounds.find((r) => r.round === round.round).bigBlind;
+	};
 }

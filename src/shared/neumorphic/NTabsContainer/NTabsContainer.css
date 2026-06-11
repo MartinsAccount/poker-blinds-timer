@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.tabsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
+  flex-wrap: wrap;
+  padding: 4px;
+  border-radius: 1rem;
+  background-color: #e4ebf5;
+}/*# sourceMappingURL=NTabsContainer.css.map */

@@ -2,7 +2,18 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	width: 100vw;
+	/* flex-wrap: wrap; */
+	/* overflow: hidden; */
+	/* width: 100vw; */
+}
+
+.tabContent {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	/* gap: 8px; */
 }
 
 .round {
@@ -11,9 +22,10 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	border: 1px solid rgb(119, 119, 119);
+	gap: 4px;
+	/* border: 1px solid rgb(119, 119, 119);
 	background-color: rgb(209, 191, 32);
-	height: 120px;
+	height: 120px; */
 }
 
 .afterRounds {
